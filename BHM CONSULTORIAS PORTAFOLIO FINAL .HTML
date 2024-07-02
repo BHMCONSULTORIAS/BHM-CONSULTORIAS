@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHM Consultorías</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('E:/DES/_f15eb980-9aa3-4d7a-bb99-bde25d6a3828.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+        header {
+            background-color: rgba(76, 175, 80, 0.8);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1, header p, .section h2, .section-content p, .section-content ul, .section-content li, footer p {
+            font-weight: bold;
+            font-style: italic;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        .container {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .section {
+            margin-bottom: 2rem;
+            position: relative;
+            padding: 2rem;
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .section h2 {
+            color: #4CAF50;
+            cursor: pointer;
+        }
+        .section-content {
+            display: none;
+            padding: 1rem;
+        }
+        .section.sobre-nosotros {
+            background-image: url('E:/DES/SOBRE NOSOTROS.png');
+        }
+        .section.servicios {
+            background-image: url('E:/DES/SERVICIOS.jpg');
+        }
+        .section.contacto {
+            background-image: url('E:/DES/contacto.jpg');
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function toggleSection(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>BHM Consultorías</h1>
+        <p>Especialistas en Radicación, Facturación y Cartera de Cuentas Médicas en Salud Colombia</p>
+    </header>
+    <div class="container">
+        <div class="section sobre-nosotros">
+            <h2 onclick="toggleSection('sobre-nosotros')">Sobre Nosotros</h2>
+            <div class="section-content" id="sobre-nosotros">
+                <p>En BHM Consultorías, nos dedicamos a ofrecer servicios de radicación, facturación y gestión de cartera de cuentas médicas en el sector salud en Colombia. Nuestro equipo de expertos está comprometido con la excelencia y la eficiencia en cada uno de nuestros procesos.</p>
+            </div>
+        </div>
+        <div class="section servicios">
+            <h2 onclick="toggleSection('servicios')">Servicios</h2>
+            <div class="section-content" id="servicios">
+                <ul>
+                    <li>Radicación de Cuentas Médicas</li>
+                    <li>Facturación de Servicios de Salud</li>
+                    <li>Gestión de Cartera y Cobranza</li>
+                    <li>Asesoría y Consultoría en Procesos Administrativos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section contacto">
+            <h2 onclick="toggleSection('contacto')">Contacto</h2>
+            <div class="section-content" id="contacto">
+                <p>Para más información, contáctanos a través de:</p>
+                <p>Email: info@bhmconsultorias.com</p>
+                <p>Teléfono: +57 123 456 7890</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 BHM Consultorías. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
