@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('fondo de la pagina.jpeg');
+            background-image: url('_f15eb980-9aa3-4d7a-bb99-bde25d6a3828.jpeg');
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -228,13 +228,13 @@
             <div class="section-content" id="contacto">
                 <p>Para más información, contáctanos a través de:</p>
                 <p>Email: info@bhmconsultorias.com</p>
-                <p>Teléfono: +57 300 806 7879</p>
+                <p>Teléfono: +57 123 456 7890</p>
             </div>
         </div>
     </div>
     <div class="form-container" id="formulario-contacto">
         <h2>Formulario de Contacto</h2>
-        <form onsubmit="validateForm(event)">
+        <form action="procesar_formulario.php" method="post">
             <label for="nombre">Nombre Completo</label>
             <input type="text" id="nombre" name="nombre" required>
 
@@ -242,13 +242,13 @@
             <input type="text" id="institucion" name="institucion" required>
 
             <label for="nit">NIT</label>
-            <input type"text" id="nit" name="nit" required>
+            <input type="text" id="nit" name="nit" required>
 
             <label for="ciudad">Ciudad</label>
-            <input type"text" id="ciudad" name="ciudad" required>
+            <input type="text" id="ciudad" name="ciudad" required>
 
             <label for="email">Email</label>
-            <input type"text" id="email" name="email" required>
+            <input type="email" id="email" name="email" required>
 
             <label for="celular">Celular</label>
             <input type="tel" id="celular" name="celular" required>
